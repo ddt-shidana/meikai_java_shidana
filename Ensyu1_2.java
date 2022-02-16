@@ -1,0 +1,9 @@
+package ensyu1_2;	//演習1-2　p20
+
+public class Ensyu1_2 {	//クラス宣言:Ensyu1_2
+
+	public static void main(String[] args) {	//ここからmainメソッド
+		System.out.println("信\n太\n一\n那");	//コメント出力:自分の氏名を一文字ずつ改行して出力
+	}
+
+}
