@@ -1,0 +1,36 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習2-3 p40
+ * 	キーボードから読み込んだ整数値をそのまま反復して
+ * 	表示するプログラムを作成せよ。
+
+ * パッケージ名:ensyu2_01
+ * クラス名:Ensyu2_01
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+package ensyu2_3;	//演習2-3　p40
+
+import java.util.Scanner;	//キーボードからの入力値取得準備
+
+public class Ensyu2_3 {	//クラス宣言:Ensyu2_3
+
+	public static void main(String[] args) {		//ここからmainメソッド
+		Scanner stdIn = new Scanner(System.in);	//stdInに入力値の取得
+
+		System.out.println ("整数値:");		//コメント出力:整数値は～
+		int z = stdIn.nextInt();	//int変数宣言：zの初期値に入力値を設定
+
+		System.out.println (z + "と入力しましたね。");	//コメント出力：～と入力しましたね。
+
+		stdIn.close();		//scannerのインスタンスをクローズ
+
+	}
+
+}

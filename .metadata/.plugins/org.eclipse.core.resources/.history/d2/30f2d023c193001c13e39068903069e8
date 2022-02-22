@@ -1,0 +1,27 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習3-18 p83
+ * 	月を1~12の整数値として読み込んで、
+ * 	それに対応する季節を表示するプログラムを作成せよ。
+ *
+ * パッケージ名:ensyu3_18
+ * クラス名:Ensyu3_18
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+package ensyu3_18;
+
+public class Ensyu3_18 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

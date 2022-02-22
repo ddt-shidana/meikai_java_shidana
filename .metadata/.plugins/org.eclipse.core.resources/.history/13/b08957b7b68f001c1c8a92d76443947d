@@ -1,0 +1,15 @@
+/*	p13
+ *	 演習1-1
+ */
+
+//グループ化のためパッケージ「ensyu1_1」を用意
+package ensyu1_1;
+
+//クラス「Ensyu1_1」の用意
+public class Ensyu1_1 {
+
+	public static void main(String[] args) {	//ここからmainメソッド
+		System.out.println("セミコロンが欠如しているとどうなるか")	//コメント出力：セミコロンが欠如しているとどうなるか
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="パッケージ名 &apos;ensyu2_6&apos; を &apos;ensyu2_06&apos; に変更します&#x0D;&#x0A;- 元のプロジェクト: &apos;ensyu2_06&apos;&#x0D;&#x0A;- オリジナル要素: &apos;ensyu2_06/src/ensyu2_6&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;ensyu2_06/src/ensyu2_06&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新&#x0D;&#x0A;- コメントおよびストリング内のテキスト出現箇所の更新" description="パッケージ名 &apos;ensyu2_6&apos; を変更します" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;ensyu2_6" name="ensyu2_06" qualified="false" references="true" stamp="1644891186814" textual="false" version="1.0"/>
+</session>

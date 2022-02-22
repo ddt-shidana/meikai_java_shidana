@@ -1,0 +1,22 @@
+/*
+ * 書籍:明解Java入門編
+ * 演習:1-1 p13
+ * クラス名:Ensyu1_1
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+
+package ensyu1_1;
+
+public class Ensyu1_1 {	//クラス宣言：Ensyu1_1
+
+	public static void main(String[] args) {	//ここからmainメソッド
+		System.out.println("セミコロンが欠如しているとどうなるか")	//コメント出力：セミコロンが欠如しているとどうなるか
+	}
+
+}

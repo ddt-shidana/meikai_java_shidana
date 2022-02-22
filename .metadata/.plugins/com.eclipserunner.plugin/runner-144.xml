@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+    <category expanded="true" name="カテゴリーなし">
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu1_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu1_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu1_3"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_01"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_01 (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_02"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_03"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_04"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_05"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_06"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_07"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_08"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu2_09"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_01"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_02"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_03"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_04"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_05"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_06"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_07"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_08"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_09"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_10"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_11"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_12"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_13"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_14"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_15"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_16"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_17"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ensyu3_18"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Rnsyu2_10"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Test1"/>
+    </category>
+</runner>

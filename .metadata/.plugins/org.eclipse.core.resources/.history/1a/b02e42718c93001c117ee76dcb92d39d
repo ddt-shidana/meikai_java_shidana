@@ -1,0 +1,44 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習3-14 p77
+ * 	二つの整数値を読み込んで、
+ * 	小さい方の値と大きい方の値の両方を表示するプログラムを作成せよ。
+ * 	ただし、二つの整数値が等しい場合は、
+ * 「二つの値は同じです。」と表示すること。
+ *
+ * パッケージ名:ensyu3_14
+ * クラス名:Ensyu3_14
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+package ensyu3_14;
+
+import java.util.Scanner;
+
+public class Ensyu3_14 {
+
+	public static void main(String[] args) {
+	//ここからmainメソッド
+		//stdInにキーボードからの入力値を初期設定
+		Scanner stdIn = new Scanner (System.in);
+
+		////使用者がわかりやすいようにナビで
+		//「整数値を2つ入力してください」と画面表示させる
+		System.out.println("整数値を2つ入力してください。");
+
+		//整数型変数a,bを用意し、入力値(stdIn)を初期設定
+		//入力値が整数値よりも大きい箱の場合、エラーになります。
+		int a = stdIn.nextInt();
+		int b = stdIn.nextInt();
+
+		//newされているので、scannerのインスタンス(stdIn)をクローズ
+		stdIn.close();
+	}
+
+}

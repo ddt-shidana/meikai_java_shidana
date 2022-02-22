@@ -1,0 +1,38 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習2-7 p44
+ * 	0, 1, 2 のいずれかの値の乱数を生成し、
+ * 	0であれば"グー"を、1であれば"チョキを"、2であれば"パー"を
+ * 	表示するプログラムを作成せよ。
+ *
+ * パッケージ名:ensyu2_07
+ * クラス名:Ensyu2_07
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+package ensyu2_7;
+
+//乱数を生成する準備のためimport
+import java.util.Random;
+
+public class Ensyu2_7 {
+
+	public static void main(String[] args) {		//ここからmainメソッド
+		Random rand = new Random();			//randに乱数の取得
+
+		int randNum1 = rand.nextInt(10);			//1桁の正の整数値で乱数作成
+		int randNum2 = - rand.nextInt(10);			//1桁の負の整数値で乱数作成
+		int randNum3 = rand.nextInt(90) + 10;		//2桁の正の整数値で乱数作成
+
+		System.out.println (randNum1);		//コメント出力：randNam1
+		System.out.println (randNum2);		//コメント出力：randNam2
+		System.out.println (randNum3);		//コメント出力：randNam3
+	}
+
+}

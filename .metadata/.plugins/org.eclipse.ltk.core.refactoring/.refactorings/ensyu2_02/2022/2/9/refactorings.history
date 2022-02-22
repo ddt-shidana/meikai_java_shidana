@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="コンパイル単位名 &apos;ensyu2_02.Ensyu2_2.java&apos; を &apos;Ensyu2_02.java&apos; に変更&#x0D;&#x0A;- 元のプロジェクト: &apos;ensyu2_02&apos;&#x0D;&#x0A;- オリジナル要素: &apos;ensyu2_02.Ensyu2_2.java&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;ensyu2_02.Ensyu2_02.java&apos;" description="コンパイル単位名 &apos;Ensyu2_2.java&apos; を変更します" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;ensyu2_02{Ensyu2_2.java" name="Ensyu2_02.java" references="false" stamp="1645494177801" version="1.0"/>
+</session>

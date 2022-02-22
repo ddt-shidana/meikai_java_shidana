@@ -1,0 +1,27 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習3-13 p73
+ * 	キーボードから読み込んだ三つの整数値の中央値を求めて
+ * 	表示するプログラムを作成せよ。
+ *
+ * パッケージ名:ensyu2_01
+ * クラス名:Ensyu2_01
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+package ensyu3_14;
+
+public class Ensyu3_14 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

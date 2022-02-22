@@ -1,0 +1,29 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習2-2 p33
+ * 	3つのint型変数に値を代入し、合計と平均を求めるプログラムを作成せよ。
+ * パッケージ名:ensyu2_01
+ * クラス名:Ensyu2_01
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+package ensyu2_02;	//演習2-2　p32
+
+public class Ensyu2_02 {	//クラス宣言:Ensyu2_2
+
+	public static void main(String[] args) {		//ここからmainメソッド
+		int x = 1, y = 2, z = 3;
+
+		System.out.println("xの値は" + x + "です。");				//コメント出力:xの値
+		System.out.println("yの値は" + y + "です。");				//コメント出力:yの値
+		System.out.println("yの値は" + z + "です。");				//コメント出力:zの値
+		System.out.println("合計は" + (x + y + z) + "です。");		//コメント出力:x,y,zの合計値
+		System.out.println("平均は" + (x + y + z) / 3 + "です。");	//コメント出力:x,y,zの平均値
+	}
+
+}

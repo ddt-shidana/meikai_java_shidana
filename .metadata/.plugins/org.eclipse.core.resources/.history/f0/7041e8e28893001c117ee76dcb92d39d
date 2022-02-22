@@ -1,0 +1,70 @@
+/*
+ * 『明解Java入門編』柴田望洋
+ *
+ * 問題:演習3-13 p73
+ * 	キーボードから読み込んだ三つの整数値の中央値を求めて
+ * 	表示するプログラムを作成せよ。
+ *
+ * パッケージ名:ensyu3_13
+ * クラス名:Ensyu3_13
+ * 作成日:2022/02/22
+ * 作成者:ShidaKazuna
+ * 修正日:
+ * 修正者:
+ * ver:1.0.0
+ */
+
+
+package ensyu3_13;
+
+//キーボードからの入力値取得準備するためimport
+import java.util.Scanner;
+
+public class Ensyu3_13 {
+//ここからクラスの内容です。
+
+	public static void main(String[] args) {
+	//ここからmainメソッド
+		//Scannerクラスのインスタンス"stdIn"を作成
+		Scanner stdIn = new Scanner (System.in);
+
+		//「整数値を3つ入力してください」と画面表示させる
+		System.out.println("整数値を3つ入力してください。");
+		int z1 = stdIn.nextInt();		//int変数z1にstdInから取り出して、初期設定
+		int z2 = stdIn.nextInt();		//int変数z2にstdInから取り出して、初期設定
+		int z3 = stdIn.nextInt();		//int変数z3にstdInから取り出して、初期設定
+
+		//3つの整数値から最小値を求める
+		int min = z1;		//z1を最小値minに初期設定
+		if (z2 < min) min = z2;		//現在のminよりz2が小さいならば、minにz2を代入
+		if (z3 < min) min = z3;		//現在のminよりz3が小さいならば、minにz3を代入
+
+		//3つの整数値から最大値を求める
+		int max = z1;		//z1を最大値maxに初期設定
+		if (z2 > max) max = z2;		//現在のmaxよりz2が大きいならば、maxにz2を代入
+		if (z3 > max) max = z3;		//現在のmaxよりz3が大きいならば、maxにz3を代入
+
+		//3つの整数値でmin.maxと一致しない中央値mediumを求める
+
+		/*没
+		int medium = z1;		//int型変数mediumを用意
+		if (z1 != min && z1 != max) medium = z1;
+		if (z2 != min && z2 != max) medium = z2;
+		if (z3 != min && z3 != max) medium = z3;
+		*/
+
+		int medium = z1;
+		if (z1 == min || z1 == max)
+			if (z2 == min || z2 == max) medium = z3;
+			else medium = z2;
+		else if (z2 == min || z2 == max) medium = z3;
+		else medium = z1;
+
+		//「3つの整数値の中央値はmediumです。」とコメントを画面出力。
+		System.out.println("3つの整数値の中央値は" + medium + "です。");
+
+		//scannerのインスタンスをクローズ
+		stdIn.close();
+	}
+
+}
