@@ -18,12 +18,13 @@
 
 package ensyu04_23;
 
+//キーボードからの入力値取得準備するためimport
 import java.util.Scanner;
 
 public class Ensyu04_23 {
 
 	public static void main(String[] args) {
-		//ここからmainメソッド
+	//ここからmainメソッド
 		//stdInにキーボードからの入力値を初期設定
 		Scanner stdIn = new Scanner(System.in);
 
