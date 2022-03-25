@@ -45,17 +45,36 @@ public class Ensyu07_19 {
 	 */
 	static int aryRmvN(int[] a, int idx, int n) {
 		int aLength = a.length;
-		for (int moveTimes = 0; moveTimes < (aLength - idx) - n; moveTimes++ )
+		for (int moveTimes = 0; moveTimes < (aLength - idx) - n; moveTimes++ ) {
 			a[idx + moveTimes] = a[(idx + n) + moveTimes];
-			return 1;
+		}
+		return 1;
 	}
 
+	//------------------------------------------------------------------------------//
+
+	//-----------------------------配列を表示するメソッド---------------------------//
+	/*メソッド名：printArray
+	 */
+	static void printArray(int[] a) {
+		//ヘッダを表示
+		System.out.print(" = {");
+		//中身を表示させるループ
+		for (int indexItr = 0; indexItr < a.length; indexItr++) {
+			System.out.print(a[indexItr]);
+			//要素間はコンマで区切る
+			if(indexItr < a.length - 1)
+				System.out.print(", ");
+		}
+		//フッダを表示
+		System.out.println("}");
+	}
 	//------------------------------------------------------------------------------//
 
 	//----------------------------------mainメソッド----------------------------------//
 	public static void main(String[] args) {
 		//プログラム開始メッセージ表示
-		System.out.println("配列aの全要素の合計を求めるプログラムです。");
+		System.out.println("配列aから要素a[idx]を先頭とするn個の要素を削除するプログラムです。");
 
 		//プログラムを再度実行するかの確認
 		do {
@@ -80,13 +99,8 @@ public class Ensyu07_19 {
 			}
 
 			//各要素の値を表示
-			System.out.print("a = {");
-			for (int indexItr = 0; indexItr < eIn; indexItr++) {
-				System.out.print(array[indexItr]);
-				if(indexItr < eIn - 1)
-					System.out.print(", ");
-			}
-			System.out.println("}");
+			System.out.print("a");
+			printArray(array);
 
 			//配列aから削除する要素のインデックスを入力してもらう
 			//0<=idx<eIn-1なので、それ以外は聞き直す
@@ -94,10 +108,11 @@ public class Ensyu07_19 {
 			do {
 				System.out.print("配列aから削除の起点となるインデックス値：");
 				idxIn = stdIn.nextInt();
-				//エラーメッセージの表示
+				//0より小さい時のエラーメッセージの表示
 				if (idxIn < 0) {
 					System.out.println("インデックスは0以上を入力してください。");
 				}
+				//最終インデックス値以上の時のエラーメッセージの表示
 				else if (idxIn >= eIn-1) {
 					System.out.println("インデックスは要素数-1より小さい値を入力してください。");
 				}
@@ -108,10 +123,11 @@ public class Ensyu07_19 {
 			do {
 				System.out.print("配列aから削除する要素の個数：");
 				nIn = stdIn.nextInt();
-				//エラーメッセージの表示
+				//0未満の時エラーメッセージの表示
 				if (nIn <= 0) {
 					System.out.println("インデックスは0より大きい値を入力してください。");
 				}
+				//要素数-起点 の値以上の時エラーメッセージの表示
 				else if (nIn >= eIn - idxIn) {
 					System.out.println("（要素数-起点となるインデックス値）より小さい値を入力してください。");
 				}
@@ -119,14 +135,8 @@ public class Ensyu07_19 {
 
 			//削除後の配列を表示
 			aryRmvN(array, idxIn, nIn);
-			System.out.print("削除後a = {");
-			for (int indexItr = 0; indexItr < eIn; indexItr++) {
-				System.out.print(array[indexItr]);
-				if(indexItr < eIn - 1)
-					System.out.print(", ");
-			}
-			System.out.println("}");
-
+			System.out.print("削除後a");
+			printArray(array);
 
 
 		} while (confirmRetry());

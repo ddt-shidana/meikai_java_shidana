@@ -59,10 +59,24 @@ public class Ensyu07_18 {
 
 	//------------------------------------------------------------------------------//
 
+	//-----------------------------配列を表示するメソッド---------------------------//
+	/*メソッド名：printArray
+	 */
+	static void printArray(int[] a) {
+		System.out.print(" = {");
+		for (int indexItr = 0; indexItr < a.length; indexItr++) {
+			System.out.print(a[indexItr]);
+			if(indexItr < a.length - 1)
+				System.out.print(", ");
+		}
+		System.out.println("}");
+	}
+	//------------------------------------------------------------------------------//
+
 	//----------------------------------mainメソッド----------------------------------//
 	public static void main(String[] args) {
 		//プログラム開始メッセージ表示
-		System.out.println("配列aの全要素の合計を求めるプログラムです。");
+		System.out.println("配列aから要素a[idx]を削除するプログラムです。");
 
 		//プログラムを再度実行するかの確認
 		do {
@@ -87,13 +101,8 @@ public class Ensyu07_18 {
 			}
 
 			//各要素の値を表示
-			System.out.print("a = {");
-			for (int indexItr = 0; indexItr < nIn; indexItr++) {
-				System.out.print(array[indexItr]);
-				if(indexItr < nIn - 1)
-					System.out.print(", ");
-			}
-			System.out.println("}");
+			System.out.print("a");
+			printArray(array);
 
 			//配列aから削除する要素のインデックスを入力してもらう
 			//0<=idx<array.lengthなので、それ以外は聞き直す
@@ -112,15 +121,8 @@ public class Ensyu07_18 {
 
 			//削除後の配列を表示
 			aryRmv(array, idxIn);
-			System.out.print("削除後a = {");
-			for (int indexItr = 0; indexItr < nIn; indexItr++) {
-				System.out.print(array[indexItr]);
-				if(indexItr < nIn - 1)
-					System.out.print(", ");
-			}
-			System.out.println("}");
-
-
+			System.out.print("削除後a");
+			printArray(array);
 
 		} while (confirmRetry());
 

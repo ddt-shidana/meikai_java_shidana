@@ -40,7 +40,7 @@ public class Ensyu07_20 {
 	}
 	//------------------------------------------------------------------------------//
 
-	//---------------配列aから要素a[idx]からn個の要素を削除するメソッド--------------//
+	//---------------------配列の要素a[idx]にxを挿入するメソッド--------------------//
 	/*メソッド名：aryIns
 	 */
 	static int aryIns(int[] a, int idx, int x) {
@@ -54,19 +54,37 @@ public class Ensyu07_20 {
 
 	//------------------------------------------------------------------------------//
 
+	//-----------------------------配列を表示するメソッド---------------------------//
+	/*メソッド名：printArray
+	 */
+	static void printArray(int[] a) {
+		//ヘッダを表示
+		System.out.print(" = {");
+		//中身を表示させるループ
+		for (int indexItr = 0; indexItr < a.length; indexItr++) {
+			System.out.print(a[indexItr]);
+			//要素間はコンマで区切る
+			if(indexItr < a.length - 1)
+				System.out.print(", ");
+		}
+		//フッダを表示
+		System.out.println("}");
+	}
+	//------------------------------------------------------------------------------//
+
 	//----------------------------------mainメソッド----------------------------------//
 	public static void main(String[] args) {
 		//プログラム開始メッセージ表示
-		System.out.println("配列aの全要素の合計を求めるプログラムです。");
+		System.out.println("配列要素a[idx]にxを挿入するプログラムです。");
 
 		//プログラムを再度実行するかの確認
 		do {
 			int eIn;
-			//要素数e(>=0)を入力してもらう
+			//要素数e(>0)を入力してもらう
 			do {
 				System.out.print("\n要素数：");
 				eIn = stdIn.nextInt();
-				//n<=0だったときのエラーメッセージを表示
+				//e<=0だったときのエラーメッセージを表示
 				if (eIn < 0) {
 					System.out.println("0以上の整数を入力してください。");
 				}
@@ -81,43 +99,38 @@ public class Ensyu07_20 {
 				array[indexItr] = stdIn.nextInt();
 			}
 
-			//各要素の値を表示
-			System.out.print("a = {");
-			for (int indexItr = 0; indexItr < eIn; indexItr++) {
-				System.out.print(array[indexItr]);
-				if(indexItr < eIn - 1)
-					System.out.print(", ");
-			}
-			System.out.println("}");
-
 			//配列a要素を挿入するインデックスを入力してもらう
-			//0<=idx<=eIn-1なので、それ以外は聞き直す
 			int idxIn;
+			//0<=idx<=eInなので、それ以外は聞き直す
 			do {
 				System.out.print("配列aに要素を挿入するインデックス値：");
 				idxIn = stdIn.nextInt();
-				//エラーメッセージの表示
+				//0より小さい場合のエラーメッセージの表示
 				if (idxIn < 0) {
 					System.out.println("インデックスは0以上を入力してください。");
 				}
-				else if (idxIn > eIn-1) {
-					System.out.println("インデックスは要素数-1以下の値を入力してください。");
+				//最終インデックス+1(要素数)より大きい場合のエラーメッセージを表示
+				else if (idxIn > eIn) {
+					System.out.println("インデックスは要素数以下の値を入力してください。");
 				}
-			} while (idxIn < 0 || idxIn > eIn-1);
+			} while (idxIn < 0 || idxIn > eIn);
 
 			//挿入する要素の値x
 			System.out.print("配列aに挿入する要素の値：");
 			int xIn = stdIn.nextInt();
 
-			//削除後の配列を表示
+
+			//各要素の値を表示
+			//ヘッダを表示
+			System.out.print("a");
+			//中身からフッダまでの表示をメソッド呼び出し
+			printArray(array);
+
+			//挿入後の配列を表示
 			aryIns(array, idxIn, xIn);
-			System.out.print("挿入後a = {");
-			for (int indexItr = 0; indexItr < eIn; indexItr++) {
-				System.out.print(array[indexItr]);
-				if(indexItr < eIn - 1)
-					System.out.print(", ");
-			}
-			System.out.println("}");
+			System.out.print("挿入後a");
+			printArray(array);
+
 
 		} while (confirmRetry());
 
