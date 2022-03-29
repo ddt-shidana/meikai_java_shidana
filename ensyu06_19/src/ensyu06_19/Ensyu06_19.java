@@ -7,7 +7,7 @@
  *
  * パッケージ名:ensyu06_19
  * クラス名:Ensyu06_19
- * 作成日:2022/02/22
+ * 作成日:2022/03/01
  * 作成者:ShidaKazuna
  * 修正日:
  * 修正者:
@@ -124,7 +124,6 @@ public class Ensyu06_19 {
 			System.out.print("  組 |");
 			System.out.print("\t " + scoreSum);
 			System.out.printf("\t%.1f\n", (double)scoreSum / peopleNumSum);
-
 
 			//retryNumは0か1
 			do {
